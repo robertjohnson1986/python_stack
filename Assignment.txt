@@ -1,0 +1,11 @@
+﻿Run the following commands:
+pip install Django==1.11.9 (Installs Django)
+pip list (lists pip w/in virtual environment)
+deactivate (This will deactivate your virtual environment)
+pip3 list (How is the result different from when you ran pip list with the virtualenv activated? (Django and pytz are gone.) Hint, you should not have as many things listed when the virtualenv is deactivated. If your results are the same, go back and figure out what went wrong.)
+source myEnvironments/py3Env/bin/activate (Adjust the path as needed to re-activate the virtualenv; for windows call myEnvironments/py3Env/Scripts/activate) (I turned back on VE but no “call” or “source” needed in Command Prompt.)
+pip install Django==1.11.9 (We know you already ran this one. What information do you see returned in terminal after this command?) (Reinstalled Django; “requirement already satisfied”)
+pip freeze (What's the difference between freeze and list?) (only listed items only in VE)
+First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. What do you see when you ls? What's inside this file? (Wasn’t able to get to Desktop because Desktop was not in my file path; Went back to root and ran pip freeze; showed version of pip.)
+pip uninstall Django (This uninstalled Django)
+pip show Django (Shows version of pip, but not Django.)
